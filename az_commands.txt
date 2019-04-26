@@ -1,0 +1,15 @@
+terraform graph:        terraform graph |dot -Tpng > terraform.png
+
+Locations:              az account list-locations -o table
+
+Image Publishers:       az vm image list-publishers -l westus2 -o table
+
+Image Offers:           az vm image list-offers -l westus2 -p MicrosoftWindowsServer -o table
+
+Image SKU:              az vm image list-skus -l westus2 -p MicrosoftWindowsServer -f WindowsServer -o table
+
+VM Machines:            az vm list-sizes -l westus2 -o table
+
+Azure VM extensions:    az vm extension image list -l westus2 -o table
+                        az vm extension image list-names -l westus2 -p Microsoft.Compute -o table
+                        az vm extension image list-versions -l westus2 -p Microsoft.Compute -n CustomScriptExtension -o table
