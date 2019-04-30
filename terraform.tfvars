@@ -5,3 +5,6 @@
 "web_server_count"          = 2
 "terraform_script_version"  = "1.00"
 "domain_name_label"         = "dd-learning-tf-web"
+"jump_server_location"      = "westeurope"
+"jump_server_prefix"        = "jump-server-eulw"
+"jump_server_name"          = "jump-eu1w"
